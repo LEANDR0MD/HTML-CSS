@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+body{
+    font-family: 'Bitcount Grid Double', Courier, monospace;
+   
+    /*Medidas Absolutas
+cm, mm, in, px, pt, pc
+
+Medidas Relativas
+em, ex, rem, vw, vh, % 
+16px normalmente = 1em */
+
+    font-size: 1em;
+}
+
+h1, h2 {
+    font-family: 'Bitcount Grid Double', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            border: 3px solid blue;
+        }
+
+        tr.linha {
+            background-color: rgb(114, 163, 206);
+        }
+
+        td.dado {
+            background-color: chartreuse;
+        }
+
+        td.destaques {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Hierarquia de tabelas (simples)
+    TABLE = TABELA
+        TABLE ROW = LINHA DE TABELA 
+             TABLE HEADER = CABEÇALHO DA TABELA 
+             TABLE DATA = DADO DA TABELA
+    -->
+    <h1>Minha Primeira Tabela</h1>
+
+    <table> <!--TABELA-->
+        <tr> <!--PRIMEIRA LINHA -->
+            <td>A1</td> <!--PRIMEIRA LINHA, PRIMEIRA COLUNA DA TABELA (a21)-->
+            <td>B1</td> <!--PRIMEIRA LINHA, SEGUNDA COLUNA DA TABELA (b22)-->
+            <td>C1</td> <!--PRIMEIRA LINHA, TERCEIRA COLUNA DA TABELA (c23)-->
+        </tr>
+        <tr class="linha"> <!--SEGUNDA LINHA-->
+            <td>A2</td> <!--SEGUNDA LINHA, PRIMEIRA COLUNA DA TABELA (a21)-->
+            <td>B2</td> <!--SEGUNDA LINHA, SEGUNDA COLUNA DA TABELA (b22)-->
+            <td>C2</td> <!--SEGUNDA LINHA, TERCEIRA COLUNA DA TABELA (c23)-->
+        </tr>
+        <tr> <!--TERCEIRA LINHA-->
+            <td>A3</td> <!--TERCEIRA LINHA, PRIMEIRA COLUNA DA TABELA (a31)-->
+            <td>B3</td> <!--TERCEIRA LINHA, SEGUNDA COLUNA DA TABELA (b32)-->
+            <td>C3</td> <!--TERCEIRA LINHA, TERCEIRA COLUNA DA TABELA (c33)-->
+        </tr>
+        <tr> <!--QUARTA LINHA-->
+            <td>A4</td> <!--QUARTA LINHA, PRIMEIRA COLUNA DA TABELA (a41)-->
+            <td class="dado">B4</td> <!--QUARTA LINHA, SEGUNDA COLUNA DA TABELA (b42)-->
+            <td>C4</td> <!--QUARTA LINHA, TERCEIRA COLUNA DA TABELA (c43)-->
+        </tr>
+        <tr>
+            <td class="destaques">A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

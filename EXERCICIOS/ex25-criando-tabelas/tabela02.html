@@ -5,19 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRIANDO TABELA</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: aliceblue;
+
+        }
+
+        thead,
+        tfoot {
+            background-color: cornflowerblue;
+
+        }
+
+        tbody>tr:nth-child(2n) {
+            background-color: rgb(234, 234, 234);
+        }
+
+        .posicao {
+            text-align: center;
+
+        }
+
+        .habitantes {
+            text-align: right;
+        }
+    </style>
 </head>
 
 <body>
     <!--ANATOMIA DAS TABELAS GRANDES
         TABLE
              THEAD
-                TR, TD, TH 
+                TR 
+                   TD, TH 
              TBODY
-                TR, TD, TH
+                TR 
+                   TD, TH
              TFOOT
-                TR, TD, TH
+                TR 
+                   TD, TH
      -->
+    <table>
+        <caption>POPULAÇÃO DAS UNIDADES FEDERATIVAS</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posicao">1</td>
+                <td>São Paulo</td>
+                <td class="habitantes">45.919.049</td>
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td>Minas Gerais</td>
+                <td class="habitantes">21.168.791</td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="habitantes">17.264.943</td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td>Bahia</td>
+                <td class="habitantes">14.873.064</td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td>Paraná</td>
+                <td class="habitantes">11.433.957</td>
+            </tr>
+            <tr>
+                <td class="posicao">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="habitantes">11.377.239</td>
+            </tr>
 
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="posicao">---</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="habitantes">(**********)</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 
 </html>

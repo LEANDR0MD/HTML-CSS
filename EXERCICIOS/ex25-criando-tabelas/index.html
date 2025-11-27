@@ -8,29 +8,24 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 400px;
+            height: 440px;
+            border-collapse: collapse;
+
         }
 
         td {
             border: 1px solid black;
             padding: 8px;
-        }
+            text-align: center;
+            /*alinhamento horizontal*/
+            vertical-align: bottom;
+            /*alinhamento vertical*/
 
-        table {
-            width: 400px;
-            border-collapse: collapse;
-            border: 3px solid blue;
-        }
-
-        tr.linha {
-            background-color: rgb(114, 163, 206);
-        }
-
-        td.dado {
-            background-color: chartreuse;
-        }
-
-        td.destaques {
-            border: 1px solid red;
         }
     </style>
 </head>
@@ -50,7 +45,7 @@
             <td>B1</td> <!--PRIMEIRA LINHA, SEGUNDA COLUNA DA TABELA (b22)-->
             <td>C1</td> <!--PRIMEIRA LINHA, TERCEIRA COLUNA DA TABELA (c23)-->
         </tr>
-        <tr class="linha"> <!--SEGUNDA LINHA-->
+        <tr> <!--SEGUNDA LINHA-->
             <td>A2</td> <!--SEGUNDA LINHA, PRIMEIRA COLUNA DA TABELA (a21)-->
             <td>B2</td> <!--SEGUNDA LINHA, SEGUNDA COLUNA DA TABELA (b22)-->
             <td>C2</td> <!--SEGUNDA LINHA, TERCEIRA COLUNA DA TABELA (c23)-->
@@ -62,16 +57,10 @@
         </tr>
         <tr> <!--QUARTA LINHA-->
             <td>A4</td> <!--QUARTA LINHA, PRIMEIRA COLUNA DA TABELA (a41)-->
-            <td class="dado">B4</td> <!--QUARTA LINHA, SEGUNDA COLUNA DA TABELA (b42)-->
+            <td>B4</td> <!--QUARTA LINHA, SEGUNDA COLUNA DA TABELA (b42)-->
             <td>C4</td> <!--QUARTA LINHA, TERCEIRA COLUNA DA TABELA (c43)-->
         </tr>
-        <tr>
-            <td class="destaques">A5</td>
-            <td>B5</td>
-        </tr>
-        <tr>
-            <td>A6</td>
-        </tr>
+
     </table>
 
 </body>

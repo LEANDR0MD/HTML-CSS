@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5° Formulário</title>
+</head>
+
+<body>
+    <h1>Formulário de marcar</h1>
+
+    <form action="cadastro.php" autocomplete="on" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <label for="imax">Masculino</label>
+                <input type="radio" name="sexo" id="imax" value="M">
+            </p>
+            <p>
+                <label for="ifen">Feminino</label>
+                <input type="radio" name="sexo" id="ifen" value="F">
+            </p>
+            <!--Para conseguirmos marcar panas uma opção e preciso deixar os names iguais. Ex: acima os dois name estão com o mesmo nome (sexo)-->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <label for="ifut">Futebol</label>
+                <input type="checkbox" name="fut" id="ifut">
+            </p>
+            <p>
+                <label for="ivol">Volei</label>
+                <input type="checkbox" name="vol" id="ivol">
+            </p>
+            <p>
+                <label for="ibas">Basquete</label>
+                <input type="checkbox" name="bas" id="ibas">
+            </p>
+            <p>
+                <label for="inat">Natação</label>
+                <input type="checkbox" name="nat" id="inat">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+
+</body>
+
+</html>

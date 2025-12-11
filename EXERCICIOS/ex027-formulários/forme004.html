@@ -11,11 +11,22 @@
 <body>
     <h1></h1>
     <form action="" autocomplete="on">
-        <p>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" required autocomplete="email">
-
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="" pattern="^\(\d{2}\)\d{5}-\d{4}$" required
+                    maxlength="14">
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">

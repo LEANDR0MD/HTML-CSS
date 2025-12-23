@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*Pesquise sobre: Typical Device Breakpoints
+
+Pequenas telas:  max-width: 0px      -     600px
+Celular:         min-width: 600px    -     767px
+Tablet:          min-width: 768px    -     991px
+Desktop:         min-width: 992px    -     1199px
+Grandes telas:   min-width: 1200px   -     +++
+*/
+
+
+@media screen and (min-width: 768px) {
+    #iconeMenu {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    main {
+        width: 70vw;
+    }
+
+
+
+
+}

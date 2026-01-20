@@ -1,1 +1,48 @@
 @charset "UTF-8";
+
+/*Pesquise sobre: Typical Device Breakpoints
+
+Pequenas telas:  max-width: 0px      -     600px
+Celular:         min-width: 600px    -     767px
+Tablet:          min-width: 768px    -     991px
+Desktop:         min-width: 992px    -     1199px
+Grandes telas:   min-width: 1200px   -     +++
+*/
+
+
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+
+}
+
+header>h1 {
+    flex: auto;
+
+}
+
+header>nav {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3px 10px 10px 10px;
+
+
+
+}
+
+header>nav>a {
+    text-align: center;
+    margin: 3px 10px;
+
+    flex: 1 1 300px;
+
+
+
+
+
+
+
+
+}

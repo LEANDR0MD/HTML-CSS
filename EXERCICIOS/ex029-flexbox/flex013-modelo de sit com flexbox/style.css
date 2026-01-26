@@ -18,12 +18,14 @@ header {
 .flex-conteiner {
     background-color: darkgrey;
     padding: 10px;
+    border: 3px dotted black;
 }
 
 .mid-text {
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: center;
+    border: 3px dotted rgb(19, 15, 255);
 
 }
 
@@ -31,10 +33,14 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    border: 3px dashed rgb(19, 15, 255);
 }
 
 .text {
     flex: 1 1 300px;
+
+    min-width: 400px;
+    border: 3px dotted rgb(239, 20, 20);
 
 }
 

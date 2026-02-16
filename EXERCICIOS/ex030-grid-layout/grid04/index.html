@@ -16,7 +16,10 @@
             border: 5px solid black;
             display: grid;
             grid-template-rows: 100px 100px 100px;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: 120px 120px 120px;
+
+            grid-auto-flow: column;
+            /*Esta aula tem dois objetivos,este comando e outro logo a baixo, este comando a cima faz com que o grid quebre em colunas e não em linha, observe a sequencia de A,B,C,D... e vejá que ele segue em forma de coluna.*/
 
             gap: 10px;
 
@@ -27,11 +30,13 @@
         .container2 {
             border: 5px solid black;
             display: grid;
-            grid-template-rows: 100px 100px 100px;
-            grid-template-columns: auto auto auto;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 120px);
 
-            grid-auto-rows: 100px;
-            /*Objetivo desta aula é este comando que ao ser inserido faz com que novas linhas que não foram explicitadas no comando grid-template-rows tenham um tamanho pré definido.*/
+            grid-auto-flow: column;
+
+            grid-auto-columns: 120px;
+            /*Este comando ao ser inserido faz com que novas colunas que não foram explicitadas no comando grid-template-column tenham um tamanho pré definido.*/
 
             gap: 10px;
 
